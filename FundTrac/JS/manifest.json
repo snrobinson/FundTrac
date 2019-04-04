@@ -1,0 +1,10 @@
+{
+    "name": "FundTrac - Expense tracker",
+    "short_name": "Fundtrac",
+    "icons": [{
+        "src": "../FundTrac/Media/dollar-sign.png", "sizes": "192x192"
+    }],
+    "start_url": "../FundTrac/index.html",
+    "display": "standalone",
+    "scope": "/"
+}

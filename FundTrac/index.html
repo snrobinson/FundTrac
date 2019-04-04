@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FundTrac - The monthly expenses tracker</title>
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <h1>FundTrac</h1>
+    <!-- <img class="header-img" src="../FundTrac/Media/dollar-sign.png" /> -->
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Bills</a></li>
+      <li><a href="#">Earnings</a></li>
+      <li><a href="#">Tracker</a></li>
+    </ul>
+  </nav>
+  <div class="mainButtonContainer">
+    <input type="button" class="bBills" value="Bills" />
+    <input class="bEarnings" type="button" value="Earnings" />
+    <input class="bTrac" type="button" value="Trac!" />
+  </div>
+
+  <form class="billInput">
+
+    <input type="button" class="bNewBill" value="New" />
+    <span class="inputsBill">
+      <input type="text" name="billName" class="billName" placeholder="Name of bill" />
+      <input type="number" name="billAmount" class="billAmount" placeholder="Amount due" />
+      <input type="date" name="billDate" class="billDate" placeholder="Due date" />
+    </span>
+    <input type="button" class="bAddNewBill" value="Add Bill" />
+    <input type="button" class="bUpdateBill" value="Update Bill" />
+    <!-- <input list="IDs" name="IDs"> -->
+    <datalist id="datalistIDs">
+      <!-- <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari"> -->
+    </datalist>
+  </form>
+  <div class="billsTable"></div>
+
+  <main></main>
+  <script src="JS/app.js"></script>
+</body>
+
+</html>
