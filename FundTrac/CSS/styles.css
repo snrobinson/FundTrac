@@ -117,25 +117,41 @@ button {
   text-align: center;
 }
 
-.billsTable {
+#billsTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   text-align: center;
 }
-
-.billsTable thead {
-  /* overflow: auto; */
-  border-style: solid;
-  margin-left: 0px;
+#billsTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #85bb65;
+  color: white;
 }
+#billsTable td, #billsTable th {
+  /* overflow: auto; */
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#billsTable tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#billsTable tr:hover {
+  background-color: #ddd;
+}
+
 .billInput {
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.bAddNewBill, .bUpdateBill, .bNewBill, .inputsBill, .datalistIDs {
+.bAddNewBill, .bUpdateBill, .bNewBill, .inputsBill, .datalistIDs, .bCancel, .bSaveBill {
   display: none;
 }
